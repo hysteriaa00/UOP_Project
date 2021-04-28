@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uop.Controller.DispatcherFXMLController">
+   <children>
+      <TabPane layoutX="11.0" layoutY="6.0" prefHeight="388.0" prefWidth="577.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Driver Information">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="driverTable" layoutX="6.0" layoutY="2.0" prefHeight="356.0" prefWidth="570.0">
+                          <columns>
+                            <TableColumn id="salaryColumn" fx:id="salaryColumn" prefWidth="75.0" text="Salary" />
+                            <TableColumn id="membershipCardColumn" fx:id="membershipCardColumn" prefWidth="75.0" text="Membership Card" />
+                              <TableColumn id="fullNameColumn" fx:id="fullNameColumn" prefWidth="84.79998779296875" text="Full Name" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
